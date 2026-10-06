@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for Crowd Runner (com.voidenapps.crowdrunner) by VOIDEN Apps.">
+<title>Crowd Runner Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap">
+</head>
+<body>
+<style>
+  :root {
+    --bg:        #F6F7F9;
+    --surface:   #FFFFFF;
+    --ink:       #171A21;
+    --muted:     #5C6270;
+    --rule:      #E2E5EA;
+    --accent:    #9A6A0E;
+    --accent-bg: #F5EAD2;
+    --shadow:    0 1px 2px rgba(23,26,33,.05), 0 8px 24px -16px rgba(23,26,33,.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:        #11131A;
+      --surface:   #191C25;
+      --ink:       #E8EAEF;
+      --muted:     #9AA1B0;
+      --rule:      #2A2F3C;
+      --accent:    #E0A93C;
+      --accent-bg: #33290F;
+      --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:        #11131A;
+    --surface:   #191C25;
+    --ink:       #E8EAEF;
+    --muted:     #9AA1B0;
+    --rule:      #2A2F3C;
+    --accent:    #E0A93C;
+    --accent-bg: #33290F;
+    --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 43rem;
+    margin: 0 auto;
+    padding: clamp(2rem, 6vw, 4.5rem) clamp(1.15rem, 5vw, 2rem) 5rem;
+  }
+
+  /* ── Masthead ─────────────────────────────────────────── */
+  .masthead { display: flex; flex-direction: column; gap: 1.25rem; }
+
+  .eyebrow {
+    font-family: "Chivo", system-ui, sans-serif;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: "Chivo", system-ui, sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.08;
+    letter-spacing: -.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .4rem 1.4rem;
+    padding: 1.1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+    font-size: .92rem;
+  }
+  .meta dt {
+    font-family: "Chivo", system-ui, sans-serif;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    align-self: center;
+  }
+  .meta dd { margin: 0; align-self: center; }
+
+  .lede {
+    font-size: 1.12rem;
+    color: var(--ink);
+    margin: 2.25rem 0 0;
+  }
+
+  hr.rule {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 2.75rem 0 0;
+  }
+
+  /* ── Sections ─────────────────────────────────────────── */
+  section { margin-top: 2.5rem; }
+
+  h2 {
+    font-family: "Chivo", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.16rem;
+    letter-spacing: -.005em;
+    margin: 0 0 .75rem;
+    display: flex;
+    gap: .7rem;
+    align-items: baseline;
+    text-wrap: balance;
+  }
+  h2 .n {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    flex: none;
+  }
+
+  p { margin: 0 0 .95rem; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 .95rem; padding-left: 1.15rem; }
+  li { margin-bottom: .4rem; }
+  li:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: .18em;
+    text-decoration-thickness: 1px;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  code, .mono {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-size: .86em;
+    background: var(--accent-bg);
+    color: var(--ink);
+    padding: .1em .38em;
+    border-radius: 3px;
+  }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    padding: 1rem 1.15rem;
+    margin: 0 0 .95rem;
+    font-size: .95rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: "Chivo", system-ui, sans-serif;
+    font-size: .82rem;
+    color: var(--muted);
+  }
+</style>
+
+<div class="wrap">
+
+
+  <header class="masthead">
+    <div class="eyebrow">VOIDEN Apps · Crowd Runner</div>
+    <h1>Privacy Policy</h1>
+
+    <dl class="meta">
+      <dt>Effective</dt><dd>6 October 2026</dd>
+      <dt>Applies to</dt><dd>Crowd Runner for Android — <span class="mono">com.voidenapps.crowdrunner</span></dd>
+      <dt>Contact</dt><dd><a href="mailto:aiapps21@proton.me">aiapps21@proton.me</a></dd>
+    </dl>
+  </header>
+
+  <p class="lede">Crowd Runner has no accounts, no sign-in, and no servers of its own. It keeps your
+  progress on your phone and never uploads it. Two kinds of data do leave the device, both handled by
+  Google: information used to show ads, and gameplay statistics and crash reports that help us fix
+  bugs and balance the game. This policy explains both.</p>
+
+  <hr class="rule">
+
+  <section>
+    <h2><span class="n">1</span> Who is responsible</h2>
+    <p>Crowd Runner is published by VOIDEN Apps. Questions about this policy, or about data handled
+    through the game, can be sent to <a href="mailto:aiapps21@proton.me">aiapps21@proton.me</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span> What the game stores on your device</h2>
+    <p>Crowd Runner saves your progress locally, in a file inside the app's own private storage. That
+    includes:</p>
+    <ul>
+      <li>coin balance, purchased and selected skins, and upgrade levels;</li>
+      <li>achievements, best wave reached, best coins in a run, and total runs played;</li>
+      <li>daily-bonus streak and the date it was last claimed;</li>
+      <li>your sound setting.</li>
+    </ul>
+    <p>This file stays on the device. It is not transmitted anywhere, it is not backed up to us, and we
+    cannot read it. Uninstalling the game deletes it.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span> Advertising — Google AdMob</h2>
+    <p>Crowd Runner shows ads through <strong>Google AdMob</strong>, operated by Google. Two kinds
+    appear: a video you can choose to watch to continue a run, and a full-screen ad that appears
+    occasionally between runs.</p>
+    <p>To select, deliver, and measure those ads, Google collects and processes information from your
+    device. That typically includes your <strong>advertising ID</strong>, your IP address (from which
+    approximate location can be derived), and technical information about the device and the app, such
+    as device model, operating-system version, and how you interacted with an ad.</p>
+    <p>We do not receive this information. We see only aggregate reporting — how many ads were shown and
+    what they earned — which does not identify anyone.</p>
+    <div class="callout">
+      <p>How Google uses data from apps that use its services:
+      <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+      Google's advertising practices:
+      <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span> Gameplay statistics and crash reports — Google Firebase</h2>
+    <p>The game uses <strong>Google Analytics for Firebase</strong> and <strong>Firebase
+    Crashlytics</strong>, both operated by Google, to understand how the game is played and to find and
+    fix crashes.</p>
+    <p><strong>Gameplay statistics.</strong> The game reports a small set of in-game events: when a run
+    starts and ends (the world played, the wave reached, how long the run lasted, coins earned, and
+    whether a continue was used), when an ad is shown or tapped, and when something is bought in the
+    in-game shop with in-game coins. Firebase also records some events on its own, such as the first
+    launch of the app and the start of a session.</p>
+    <p><strong>Crash reports.</strong> If the game crashes or hits an error, Crashlytics sends a report
+    containing the technical details of the error, the state of the game at that moment (such as the
+    current wave and world), and information about the device.</p>
+    <p>Along with these, Firebase collects technical identifiers and device information: an app-instance
+    ID generated for this installation, the advertising ID where available, device model,
+    operating-system version, app version, language, and approximate location (country or region)
+    derived from the IP address.</p>
+    <p>None of this contains your name, email address, phone number, contacts, or anything you type. We
+    see the results as statistics and crash lists in the Firebase console, and use them only to improve
+    the game. Google keeps this data for a limited period — crash reports for about 90 days, analytics
+    data for no more than 14 months.</p>
+    <div class="callout">
+      <p>How Google handles Firebase data:
+      <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span> Who data is shared with</h2>
+    <p>Data from the game is shared with these types of parties, and no others:</p>
+    <ul>
+      <li><strong>Advertising provider</strong> — Google (AdMob), to show and measure ads, as described
+      in section 3.</li>
+      <li><strong>Analytics and crash-reporting provider</strong> — Google (Firebase), to produce
+      gameplay statistics and crash reports, as described in section 4.</li>
+      <li><strong>Authorities</strong> — only if we are legally required to disclose information.</li>
+    </ul>
+    <p>We do not sell personal data, and we do not share it with anyone for their own marketing. Data is
+    sent to Google over an encrypted (HTTPS) connection.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span> What the game does not do</h2>
+    <p>Crowd Runner does not ask you to create an account or sign in. It has no chat, no comments, no
+    profiles, and no way for players to send anything to each other. It does not request your precise
+    location, camera, microphone, contacts, photos, or files. It has no purchases for real money — the
+    shop uses only coins earned in the game.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span> Permissions</h2>
+    <p>The permissions the app declares come from the advertising and analytics libraries rather than
+    from gameplay. The ones that matter for privacy are:</p>
+    <ul>
+      <li><span class="mono">INTERNET</span> and <span class="mono">ACCESS_NETWORK_STATE</span> — to
+      fetch ads and send statistics and crash reports. Gameplay itself needs no network and works
+      offline.</li>
+      <li><span class="mono">com.google.android.gms.permission.AD_ID</span> — access to the device
+      advertising ID, used to select and measure ads and for analytics.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">8</span> Your choices</h2>
+    <p>Android gives you direct control over the advertising ID, independently of this app. In
+    <strong>Settings → Privacy → Ads</strong> you can delete or reset it, and you can turn off ad
+    personalisation entirely — ads will still appear, but they will be less targeted.</p>
+    <p>Uninstalling the game deletes everything it stored on your device and stops all data collection.
+    A new installation gets a new app-instance ID, which is not linked to the old one.</p>
+    <p>Because we do not know who you are, we cannot look up data by your name or email. If you have a
+    question or a request about your data, write to us and we will help as far as we can.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">9</span> Children</h2>
+    <p>Crowd Runner is not directed at children. It depicts stylised combat and is rated accordingly on
+    Google Play. We do not knowingly collect personal information from children. If you believe a child
+    has provided information through this app, contact us and we will act on it.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">10</span> Where you are</h2>
+    <p>Google processes advertising and analytics data on servers in a number of countries, which may be
+    outside the one you are in. Where local law requires your consent before personalised advertising
+    is shown — such as in the European Economic Area, the United Kingdom, and Switzerland — that consent
+    is requested inside the app before ads are loaded, and your choice is remembered and can be changed
+    in the game's settings.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">11</span> Changes</h2>
+    <p>If this policy changes, the revised version is published at this address with a new effective
+    date. Changes that affect how data is handled will be reflected here before they take effect in the
+    app.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">12</span> Contact</h2>
+    <p>Write to <a href="mailto:aiapps21@proton.me">aiapps21@proton.me</a>. This is the same address
+    listed on the Crowd Runner page on Google Play.</p>
+  </section>
+
+  <footer>VOIDEN Apps · Crowd Runner · Effective 6 October 2026</footer>
+
+</div>
+</body>
+</html>
